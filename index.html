@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Está sem ideias ou tempo para decidir o que vai assistir? O SortCine tá aqui para te ajudar! Selecione um gênero e clique no botão para sortear o que assistir!">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>SortCine</title>
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="img/logo.png">
+    </header>
+
+    <main>
+        <div class="peliculas-recomendadas contenedor">
+            <div class="contenedor-titulo-controles">
+                <h3>Gêneros de Filmes</h3>
+                <div class="indicadores"></div>
+            </div>
+
+            <div class="contenedor-principal">
+                <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+
+                <div class="contenedor-carousel">
+                    <div class="carousel">
+                        <div class="pelicula">
+                            <img src="img/ação.png" id="action" alt="">
+                        </div>
+                        <div class="pelicula">
+                            <img src="img/animação.png" id="animation" alt="">
+                        </div>
+                        <div class="pelicula">
+                            <img src="img/aventura.png" id="adventure" alt="">
+                        </div>
+                        <div class="pelicula">
+                            <img src="img/comédia.png" id="comedy" alt="">
+                        </div>
+                        <div class="pelicula">
+                            <img src="img/crime.png" id="crime" alt="">
+                        </div>
+                        <div class="pelicula">
+                            <img src="img/documentário.png" id="documentary" alt="">
+                        </div>
+                        <div class="pelicula">
+                            <img src="img/drama.png" id="drama" alt="">
+                        </div>
+                        <div class="pelicula">
+                            <img src="img/família.png" id="family" alt="">
+                        </div>
+                        <div class="pelicula">
+                            <img src="img/fantasia.png" id="fantasy" alt="">
+                        </div>
+                        <div class="pelicula">
+                            <img src="img/faroeste.png" id="western" alt="">
+                        </div>
+                        <div class="pelicula">
+                            <img src="img/ficção-cientifica.png" id="scifi" alt="">
+                        </div>
+                        <div class="pelicula">
+                            <img src="img/história.png" id="history" alt="">
+                        </div>
+                        <div class="pelicula">
+                            <img src="img/mistério.png" id="mystery" alt="">
+                        </div>
+                        <div class="pelicula">
+                            <img src="img/musical.png" id="music" alt="">
+                        </div>
+                        <div class="pelicula">
+                            <img src="img/romance.png" id="romance" alt="">
+                        </div>
+                        <div class="pelicula">
+                            <img src="img/suspense.png" id="thriller" alt="">
+                        </div>
+                        <div class="pelicula">
+                            <img src="img/terror.png" id="horror" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+            </div>
+
+        </div>
+    </main>
+
+    <div id="sorteio-div">
+        <button type="button" class="buttonSorteio" id="btnSorteio">Sorteie seu filme!</button>
+        <div id="resultado" class="resultado"></div>
+    </div>
+
+    <div id="root"></div>
+
+    <footer id="footer">
+        <p>Projeto feito na <a target="_blank" href="https://www.laboratoria.la/br">Laboratoria</a>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="index.js" type="module"></script>
+    <script src="carrossel.js" type="module"></script>
+    
+</body>
+
+</html>
